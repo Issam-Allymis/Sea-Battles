@@ -1,3 +1,12 @@
-# Your code goes here.
-# You can delete these comments, but do not change the name of this file
-# Write your code to expect a terminal of 80 characters wide and 24 rows high
+from random import randint
+
+class Seaship:
+    """
+    
+    """
+
+    def __init__(self, board_size, username, num_ships):
+        self.board_size
+        self.username
+        self.num_ships
+        
