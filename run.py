@@ -52,6 +52,9 @@ class Seaship_Battle:
         return ships
     
     
+
+
+def run_game():
     def get_user_input(self):
         """
         
@@ -67,9 +70,7 @@ class Seaship_Battle:
                 print("Input invalid. Please enter a valid column.")
                 guess_col = input("Enter a column between 0-6: \n")
 
-            return int(guess_row), int(guess_col) 
-
-
+            return int(guess_row), int(guess_col) _
 
 
 
