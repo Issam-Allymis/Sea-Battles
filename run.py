@@ -43,7 +43,7 @@ class Seaship_Battle:
                 if coor in self.hits:
                     symb = 'X'
                 elif coor in self.misses:
-                    symb = '-'
+                    symb = 'O'
                 row = row + symb
             print(i, row)
 
@@ -126,6 +126,7 @@ def run_game():
     print('- The guess should be between 0 - 6')
     print('- The top left corner would be row: 0, col: 0.')
     print('- You will have ten turns before the game ends.')
+    print('X = Hit, O = Miss')
     print('- Once all ships are hit the game will end!')
     print('*-*' * 15)
     username = input('Please enter your name before commencing the game: \n')
