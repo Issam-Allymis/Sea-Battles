@@ -136,3 +136,12 @@ def get_user_input(self):
     return int(guess_row), int(guess_col)
     
 
+def main():
+    """
+    Calling function to run the game
+    """
+
+    run_game()
+
+
+main()
