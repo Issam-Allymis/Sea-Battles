@@ -1,6 +1,8 @@
 from random import randint
 
-
+# Global variables
+HIT = []
+MISS = []
 
 class Seaship_Battle:
     """
