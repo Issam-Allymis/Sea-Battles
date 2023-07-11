@@ -6,10 +6,21 @@ MISS = []
 
 class Seaship_Battle:
     """
-    
+    Class representing the Sea Battles game.
     """
 
     def __init__(self,  board_size, num_ships, username,):
+        """
+        Initializes a Seaship_Battle object.
+
+        Attributes:
+            board_size (int): The size of the game board.
+            num_ships (int): The number of ships in the game.
+            username (str): The name of the player.
+            hits (list): A list of hit coordinates.
+            misses (list): A list of missed coordinates.
+            ships (list): A list of ship coordinates.
+        """
         self.board_size = board_size
         self.num_ships = num_ships
         self.username = username
@@ -19,7 +30,7 @@ class Seaship_Battle:
 
     def print_board(self):
         """
-        
+        Prints the game board.
         """
         print('**********')
         print(f"{self.username}\n ")
@@ -39,7 +50,12 @@ class Seaship_Battle:
 
     def playr_turn(self, row, col):
         """
-        
+        Processes a player's turn.
+
+        row (int): The guessed row coordinate.
+        col (int): The guessed column coordinate.
+
+        returns bool: True if it's a hit, False if it's a miss or already guessed.
         """
         coor = (row, col)
         if coor in self.ships:
@@ -48,20 +64,20 @@ class Seaship_Battle:
             print('HIT')
             return True
         
-        elif coor in self.misses or coor in self.hits:
+        if coor in self.misses or coor in self.hits:
             print("You've already guessed this coordinate.. try again!")
             return False
         
-        else:
-            self.misses.append(coor)
-            print('MISS')
-            return False
+        self.misses.append(coor)
+        print('MISS')
+        return False
 
         
  
     def create_ships(self):
         """
         Sets random ships to the board
+        returns a list of ship coordinates.
         """
         ships = []
         while len(ships) < self.num_ships:
@@ -74,10 +90,26 @@ class Seaship_Battle:
 
         return ships
     
+def get_user_input(self):
+    """
+    Gets user input for row and column.
+    Returns a tuple containing the guessed row and column as integers.
+    """
+    while True:
+        guess_row = input("Enter a row between 0-6: \n")
+        guess_col = input("Enter a column between 0-6: \n")
+
+        if guess_row in ['0', '1', '2', '3', '4', '5', '6'] and guess_col in ['0', '1', '2', '3', '4', '5', '6']:
+            return int(guess_row), int(guess_col)
+
+        print("Input invalid. Please enter valid row and column.")
 
 
 
 def run_game():
+    """
+    Runs the Sea Battles game.
+    """
 
     board_size = 7
     num_ships = 3 
@@ -120,22 +152,7 @@ def run_game():
     return username
 
 
-def get_user_input(self):
-    """
-        
-    """
-        
-    guess_row = input("Enter a row between 0-6: \n")
-    while guess_row not in ['0', '1', '2', '3', '4', '5', '6']:
-        print("Input invalid. Please enter a valid row.")
-        guess_row = input("Enter a row between 0-6: ")
 
-    guess_col = input("Enter a column between 0-6: \n")
-    while guess_col not in ['0', '1', '2', '3', '4', '5', '6']:
-        print("Input invalid. Please enter a valid column.")
-        guess_col = input("Enter a column between 0-6: \n")
-
-    return int(guess_row), int(guess_col)
     
 
 def main():
