@@ -22,7 +22,7 @@ class Seaship_Battle:
         
         """
         print('**********')
-        print(f"{self.username} : {turns}\n ")
+        print(f"{self.username}\n ")
         print('**********')
         for i in range(self.board_size):
             row = ' '
@@ -81,7 +81,7 @@ def run_game():
 
     board_size = 7
     num_ships = 3 
-    print('*-' * 15)
+    print('*-*' * 15)
     print('Welcome to Sea Battles!  \n')
     print(f'Board size: {board_size}. Total number of ships: {num_ships}')
     print('How to win: Sink all your oponent\'s ships. \n')
@@ -90,12 +90,12 @@ def run_game():
 
 
     print('Rules: ')
-    print('-  Player starts with guessing the row and column.')
+    print('- Player starts with guessing the row and column.')
     print('- The guess should be between 0 - 6')
     print('- The top left corner would be row: 0, col: 0.')
     print('- You will have ten turns before the game ends.')
     print('- Once all ships are hit the game will end!')
-    print('*-' * 15)
+    print('*-*' * 15)
     username = input('Please enter your name before commencing the game: \n')
 
     player_game = Seaship_Battle(board_size, num_ships, username)
