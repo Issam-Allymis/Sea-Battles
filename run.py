@@ -90,7 +90,7 @@ class Seaship_Battle:
 
         return ships
     
-def get_user_input(self):
+def get_user_input():
     """
     Gets user input for row and column.
     Returns a tuple containing the guessed row and column as integers.
