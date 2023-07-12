@@ -41,9 +41,9 @@ class Seaship_Battle:
                 coor = (i, j)
                 symb = ' . '
                 if coor in self.hits:
-                    symb = 'X'
+                    symb = ' X '
                 elif coor in self.misses:
-                    symb = 'O'
+                    symb = ' O '
                 row = row + symb
             print(i, row)
 
