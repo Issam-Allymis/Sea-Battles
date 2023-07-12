@@ -36,7 +36,7 @@ class Seaship_Battle:
         print(f"{self.username}\n ")
         print('**********')
         for i in range(self.board_size):
-            row = ' '
+            row = ''
             for j in range(self.board_size):
                 coor = (i, j)
                 symb = ' . '
@@ -126,7 +126,8 @@ def run_game():
     print('- The guess should be between 0 - 6')
     print('- The top left corner would be row: 0, col: 0.')
     print('- You will have ten turns before the game ends.')
-    print('X = Hit, O = Miss')
+    print('- X = Hit')
+    print('- O = Miss')
     print('- Once all ships are hit the game will end!')
     print('*-*' * 15)
     username = input('Please enter your name before commencing the game: \n')
