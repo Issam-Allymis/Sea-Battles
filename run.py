@@ -112,7 +112,7 @@ def run_game():
     """
 
     board_size = 7
-    num_ships = 3 
+    num_ships = 6 
     print('*-*' * 15)
     print('Welcome to Sea Battles!  \n')
     print(f'Board size: {board_size}. Total number of ships: {num_ships}')
