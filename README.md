@@ -17,9 +17,51 @@ Throughout the game, you can refer to the game board to see your previous guesse
 ## Features
 ### Current features 
 
+![Screenshot 2023-07-12 022320](https://github.com/Issam-Allymis/Sea-Battles/assets/126810074/e50f9122-c5ef-459f-94f4-c7c9513dfc29)
 
+- Game Initialization: The game initializes by asking for the player's name and displaying the board size and the total number of ships.
+
+- Game Board: The game displays a board of a specified size, representing the sea battlefield. It shows the player's username at the top and visualizes the hits and misses on the board.
+
+- Ship Placement: The game randomly places a specified number of ships on the board. Each ship occupies one square on the board.
+
+![Screenshot 2023-07-12 025419](https://github.com/Issam-Allymis/Sea-Battles/assets/126810074/91166e4d-8824-4656-8e76-a49f0b00f12b)
+
+- Input Validation: The game enforces the following input validation rules for player guesses:
+  - You cannot enter coordinates that have already been guessed.
+  - You cannot enter coordinates outside the size of the game board.
+ 
+![Screenshot 2023-07-12 025419](https://github.com/Issam-Allymis/Sea-Battles/assets/126810074/9da6fdfc-1c0c-4ce3-9bfb-e0f3a8ac9dbf)
+
+
+## Data Model
+The Seaship_Battle class serves as the model for the Sea Battleship game. It plays a pivotal role in the game by defining and managing important aspects of the gameplay. This class allows for the configuration of essential game parameters, including the size of the game board and the number of ships. Additionally, it facilitates the storage and retrieval of crucial information, such as the player's name. By encapsulating these details, the Seaship_Battle class provides a structured representation of the game's data and rules, enabling seamless interactions and effective management of the game state.
+
+## Testing 
+I have manually tested my project.
+- Passed the code through a PEP8 linter and can confirm that no errors were detected.
+- Used print function to debug any problems that i met through the journey
+- Tested in my local terminal in the Code Institute Heroku terminal
+
+## Bugs
+**Solved**
+- I resolved the issue where the HIT and MISS markers were not displaying properly on the board. The previous implementation made the board difficult to read and understand which coordinates were being targeted. I resolved this problem by adding spaces around the ' X ' and ' O ' markers in the for loop. This adjustment improved the readability and organization of the game board, making it easier to identify the hit and miss coordinates.
+
+### Remaining Bugs
+- None
+
+## Deployment
+This project was deployed using Code Institute's mock terminal for Heroku.
+**Steps for deployment**:
+- Clone or fork the repository.
+- Create a new Heroku app.
+- Set the buildpacks to *Python* and *NodeJS* in that exact order.
+- Link the Heroku app to the GitHub repository.
+- Click **Deploy**
 
 Happy coding!
+
+
 
 # Disclaimer
 ***The Sea Battles Project Was Created Only For Educational Purposes.*** 📖
