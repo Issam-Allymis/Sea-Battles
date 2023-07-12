@@ -1,10 +1,13 @@
+"""
+This module provides the necessary functionality for the Sea Battles game.
+"""
 from random import randint
 
 # Global variables
 HIT = []
 MISS = []
 
-class Seaship_Battle:
+class SeashipBattle:
     """
     Class representing the Sea Battles game.
     """
@@ -63,17 +66,13 @@ class Seaship_Battle:
             self.ships.remove(coor)
             print('HIT')
             return True
-        
         if coor in self.misses or coor in self.hits:
             print("You've already guessed this coordinate.. try again!")
             return False
-        
         self.misses.append(coor)
         print('MISS')
         return False
 
-        
- 
     def create_ships(self):
         """
         Sets random ships to the board
@@ -89,7 +88,7 @@ class Seaship_Battle:
                 ships.append(ship_coor)
 
         return ships
-    
+
 def get_user_input():
     """
     Gets user input for row and column.
@@ -98,10 +97,9 @@ def get_user_input():
     while True:
         guess_row = input("Enter a row between 0-6: \n")
         guess_col = input("Enter a column between 0-6: \n")
-
-        if guess_row in ['0', '1', '2', '3', '4', '5', '6'] and guess_col in ['0', '1', '2', '3', '4', '5', '6']:
+        if (guess_row in ['0', '1', '2', '3', '4', '5', '6'] and
+            guess_col in ['0', '1', '2', '3', '4', '5', '6']):
             return int(guess_row), int(guess_col)
-
         print("Input invalid. Please enter valid row and column.")
 
 
@@ -110,9 +108,8 @@ def run_game():
     """
     Runs the Sea Battles game.
     """
-
     board_size = 7
-    num_ships = 6 
+    num_ships = 6
     print('*-*' * 15)
     print('Welcome to Sea Battles!  \n')
     print(f'Board size: {board_size}. Total number of ships: {num_ships}')
@@ -132,7 +129,7 @@ def run_game():
     print('*-*' * 15)
     username = input('Please enter your name before commencing the game: \n')
 
-    player_game = Seaship_Battle(board_size, num_ships, username)
+    player_game = SeashipBattle(board_size, num_ships, username)
 
     turns = 0
     max_turns = 10
@@ -144,7 +141,7 @@ def run_game():
 
         if len(player_game.ships) == 0:
             print('Congratualtions! you have destroyed all of the ships!')
-    
+
         elif turns == max_turns:
             break
         turns += 1
@@ -153,9 +150,6 @@ def run_game():
     print('Game Over!')
     return username
 
-
-
-    
 
 def main():
     """
