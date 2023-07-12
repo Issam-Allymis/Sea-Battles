@@ -135,7 +135,7 @@ def run_game():
     player_game = Seaship_Battle(board_size, num_ships, username)
 
     turns = 0
-    max_turns = 11
+    max_turns = 10
 
     while turns < max_turns and len(player_game.ships) > 0:
         player_game.print_board()
