@@ -5,6 +5,9 @@
 
 Sea Battles is a Python terminal game that runs in the Code Institute mock terminal on Heroku. It is a one-player game where the user aims to hit all the randomly placed ships on the board. Each battleship occupies one square on the board. Sea Battleship is a turn-based game where you, as the player, try to hit and sink all the battleships on the game board. The game board is a grid consisting of squares, and each square represents a coordinate on the board.
 
+[Sea Battles🎮](https://sea-batt1es-affc65a93948.herokuapp.com/)
+
+[Repository📁](https://github.com/Issam-Allymis?tab=repositories)
 ## How to play Sea Battles 🎲
 The objective of the game is to sink all the battleships within ten turns. In each turn, you will guess a coordinate by providing the row and column numbers. The top left corner of the board is represented by row 0 and column 0, while the bottom right corner is represented by row 6 and column 6.
 
