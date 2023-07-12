@@ -61,7 +61,10 @@ This project was deployed using Code Institute's mock terminal for Heroku.
 
 Happy coding!
 
-
+## Credits
+- I would like to express my sincere gratitude to my senior personal tutor for their invaluable assistance in structuring and debugging my code. Their guidance and insights have been instrumental in improving the overall quality and organization of my code. Their tips and ideas have significantly contributed to my understanding of code structure and debugging techniques. I am truly grateful for their support throughout this process.
+- Code Institute for the deployment terminal "Heroku" and for the invaluable information available on the course.
+- I would like to extend my heartfelt appreciation to my family and friends for their unwavering support and patience during these challenging weeks of dedicated coding. Their understanding and encouragement have been invaluable as I immersed myself in this intense coding journey. Their belief in me and their willingness to provide the space and understanding I needed are truly cherished. I am grateful to have such amazing individuals in my life who stand by me as I pursue my passion.
 
 # Disclaimer
 ***The Sea Battles Project Was Created Only For Educational Purposes.*** 📖
